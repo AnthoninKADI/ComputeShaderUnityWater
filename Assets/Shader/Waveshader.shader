@@ -5,10 +5,9 @@ Shader "Unlit/Waveshader"
                 _MainTex ("Wave Texture", 2D) = "white" {}
                 _WaveHeight ("Wave Height Multiplier", Float) = 0.5
         
-                // Couleurs exposées dans l'éditeur Unity
-                _ColorLowest ("Color at Lowest Point", Color) = (0, 0, 0.5, 1) // Bleu foncé
-                _ColorMid ("Color at Mid Point", Color) = (0, 0.5, 1, 1)     // Bleu clair
-                _ColorPeak ("Color at Highest Point", Color) = (1, 1, 1, 1)   // Blanc
+                _ColorLowest ("Color at Lowest Point", Color) = (0, 0, 0.5, 1) 
+                _ColorMid ("Color at Mid Point", Color) = (0, 0.5, 1, 1)    
+                _ColorPeak ("Color at Highest Point", Color) = (1, 1, 1, 1)  
             }
             SubShader
             {
@@ -24,9 +23,9 @@ Shader "Unlit/Waveshader"
                     sampler2D _MainTex;
                     float _WaveHeight;
                     
-                    fixed4 _ColorLowest;  // Couleur la plus foncée
-                    fixed4 _ColorMid;     // Couleur intermédiaire
-                    fixed4 _ColorPeak;    // Couleur la plus claire
+                    fixed4 _ColorLowest;  
+                    fixed4 _ColorMid;    
+                    fixed4 _ColorPeak;    
         
                     struct appdata_t
                     {

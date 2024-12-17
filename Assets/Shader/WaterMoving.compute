@@ -4,10 +4,10 @@ RWTexture2D<float4> CurrentState;
 
 cbuffer Parameters
 {
-    float WaveHeight;      // Hauteur des vagues
-    float WaveSpeed;       // Vitesse de propagation
-    float2 Resolution;     // Résolution de la texture
-    float Time;            // Temps écoulé
+    float WaveHeight;      
+    float WaveSpeed;       
+    float2 Resolution;     
+    float Time;            
 }
 
 [numthreads(8, 8, 1)]
@@ -15,12 +15,9 @@ void CSMain(uint3 id : SV_DispatchThreadID)
 {
     float2 uv = id.xy / Resolution;
 
-    // Générer une onde sinusoïdale combinée
     float wave = sin(uv.x * 10 + Time * WaveSpeed) * sin(uv.y * 10 + Time * WaveSpeed);
 
-    // Ajuster la hauteur et normaliser entre 0 et 1
     wave = (wave * 0.5 + 0.5) * WaveHeight;
 
-    // Sortie RGBA (hauteur dans le canal rouge)
     CurrentState[id.xy] = float4(wave, wave, wave, 1.0);
 }

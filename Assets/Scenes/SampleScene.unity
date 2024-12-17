@@ -246,7 +246,7 @@ MonoBehaviour:
   waterMaterial: {fileID: 2100000, guid: e0ea12c49cbde2c4ebf3a7729be91684, type: 2}
   currentState: {fileID: 0}
   resolution: {x: 100, y: 100}
-  waveHeight: 2
+  waveHeight: 8
   waveSpeed: 2
   waveColor: {r: 0, g: 1, b: 0.9802115, a: 1}
 --- !u!1 &705507993
