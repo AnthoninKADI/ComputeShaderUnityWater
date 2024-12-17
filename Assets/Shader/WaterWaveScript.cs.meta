@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 208c233a77529b44cba57490fc6078b8
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - waveCompute: {fileID: 7200000, guid: 53c32fbcca65b4f4e9fc18a97dfdf660, type: 3}
+  - waterMaterial: {fileID: 2100000, guid: e0ea12c49cbde2c4ebf3a7729be91684, type: 2}
+  - currentState: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
